@@ -122,7 +122,6 @@ const footerLines = () => {
     const prevInfo = footerInfoColl[i - 1];
 
     const distance = info.offsetLeft - (prevInfo.offsetLeft + prevInfo.offsetWidth);
-    console.log(distance);
     info.style.setProperty('--left', `-${distance / 2}px`);
   });
 };
